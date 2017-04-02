@@ -30,6 +30,7 @@
     "docs": "npm run clean:docs && cd docs && ../node_modules/.bin/typedoc --options typedoc.json --excludePrivate"
   },
   "dependencies": {
+    "@types/lodash": "ts2.0",
     "loader-utils": "^1.1.0"
   },
   "bugs": {
@@ -50,7 +51,6 @@
     "@angular/platform-server": "~4.0.1",
     "@angular/router": "~4.0.1",
     "@types/chai": "^3.4.35",
-    "@types/lodash": "^4.14.61",
     "@types/mocha": "^2.2.40",
     "@types/node": "^7.0.12",
     "@types/webpack": "^2.2.14",
