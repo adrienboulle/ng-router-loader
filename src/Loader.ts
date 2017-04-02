@@ -91,7 +91,7 @@ export class Loader {
   }
 
   private replaceSource(match: string, loadChildrenPath: string): Promise<ReplaceResult> {
-    this.query = Object.assign({}, DEFAULT_OPTIONS, loaderUtils.parseQuery(this.webpack.query));
+    this.query = Object.assign({}, DEFAULT_OPTIONS, loaderUtils.getOptions(this.webpack));
 
     const route = new RouteDestination(loadChildrenPath, this.webpack.resourcePath, this.query);
 
