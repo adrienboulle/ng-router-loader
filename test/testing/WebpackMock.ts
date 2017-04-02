@@ -12,7 +12,7 @@ export class WebpackMock {
       .join('&');
 
     if (kvp) return '?' + kvp;
-    return '';
+    return '?';
   }
 
   resolve(context: string, resourceUri: string, cb: (err, fullPath?) => void): void {

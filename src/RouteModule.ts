@@ -27,7 +27,7 @@ export class RouteDestination {
     const { loader, chunkName, bySymbol } = Object.assign(
       {},
       DEFAULT_RESOURCE_OPTIONS,
-      loaderUtils.parseQuery(pathQuery ? '?' + pathQuery : '')
+      loaderUtils.parseQuery(pathQuery ? '?' + pathQuery : '?')
     );
 
     this.options = {

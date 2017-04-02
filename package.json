@@ -30,35 +30,36 @@
     "docs": "npm run clean:docs && cd docs && ../node_modules/.bin/typedoc --options typedoc.json --excludePrivate"
   },
   "dependencies": {
-    "loader-utils": "^0.2.16"
+    "loader-utils": "^1.1.0"
   },
   "bugs": {
     "url": "https://github.com/shlomiassaf/ng-router-loader/issues"
   },
   "homepage": "https://github.com/shlomiassaf/ng-router-loader#readme",
   "devDependencies": {
-    "@angular/common": "~2.4.1",
-    "@angular/compiler": "~2.4.1",
-    "@angular/compiler-cli": "~2.4.1",
-    "@angular/core": "~2.4.1",
-    "@angular/forms": "~2.4.1",
-    "@angular/http": "~2.4.1",
-    "@angular/material": "2.0.0-beta.1",
-    "@angular/platform-browser": "~2.4.1",
-    "@angular/platform-browser-dynamic": "~2.4.1",
-    "@angular/platform-server": "~2.4.1",
-    "@angular/router": "~3.4.1",
-    "@types/chai": "^3.4.34",
-    "@types/mocha": "^2.2.35",
-    "@types/node": "^6.0.55",
-    "@types/webpack": "^2.1.0",
+    "@angular/animations": "~4.0.1",
+    "@angular/common": "~4.0.1",
+    "@angular/compiler": "~4.0.1",
+    "@angular/compiler-cli": "~4.0.1",
+    "@angular/core": "~4.0.1",
+    "@angular/forms": "~4.0.1",
+    "@angular/http": "~4.0.1",
+    "@angular/material": "2.0.0-beta.2",
+    "@angular/platform-browser": "~4.0.1",
+    "@angular/platform-browser-dynamic": "~4.0.1",
+    "@angular/platform-server": "~4.0.1",
+    "@angular/router": "~4.0.1",
+    "@types/chai": "^3.4.35",
+    "@types/mocha": "^2.2.40",
+    "@types/node": "^7.0.12",
+    "@types/webpack": "^2.2.14",
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
-    "rxjs": "^5.0.2",
-    "ts-node": "^2.0.0",
-    "typedoc": "^0.5.3",
+    "rxjs": "^5.2.1-smooth",
+    "ts-node": "^3.0.2",
+    "typedoc": "^0.5.9",
     "typedoc-markdown-theme": "^0.0.4",
-    "typescript": "2.0.10",
-    "zone.js": "~0.7.4"
+    "typescript": "2.2.2",
+    "zone.js": "~0.8.5"
   }
 }

@@ -44,11 +44,7 @@ export interface ReplaceResult {
   replacement: string
 }
 
-export type  LoaderCodeGen = Function & (
-    ( (file: string, module: string) => string )
-  | ( (file: string, module: string, loaderOptions: RouterLoaderOptions) => string )
-  | ( (file: string, module: string, loaderOptions: RouterLoaderOptions, resourceOptions: RouteResourceOptions) => string )
-  )
+export type  LoaderCodeGen = (file: string, module: string, loaderOptions?: RouterLoaderOptions, resourceOptions?: RouteResourceOptions) => string;
 
 export class Loader {
   public query: RouterLoaderOptions;
@@ -99,7 +95,7 @@ export class Loader {
 
     const route = new RouteDestination(loadChildrenPath, this.webpack.resourcePath, this.query);
 
-    const codeGen = Loader.LOADER_CODEGEN_MAP.get(route.options.loader);
+    const codeGen: LoaderCodeGen = Loader.LOADER_CODEGEN_MAP.get(route.options.loader);
     if (!codeGen) {
       return Promise.reject(new Error(`ng-router-loader - Invalid code generator "${route.options.loader}"`));
     }
