@@ -7,7 +7,6 @@
     "sourceMap": true,
     "inlineSources": true,
     "declaration": true,
-    "outDir": "dist",
     "noEmitOnError": true,
     "moduleResolution": "node",
     "skipLibCheck": true
